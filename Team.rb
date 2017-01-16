@@ -14,8 +14,15 @@ class Team
   attr_reader :coach
   def initialize(team_name, players, coach)
     @name = team_name
-    @players= players
+    @players= players [ ]
     @coach = coach
   end
-   
+
+  def test_add_player
+   assert_equal("Michaels", @players)
+  end
+
+  def test_player_name
+  end
+
 end
