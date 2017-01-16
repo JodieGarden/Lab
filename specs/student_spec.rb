@@ -24,7 +24,7 @@ def test_student_talk
   assert_equal("I can talk!",@daniel.words)
 end
 
-def test_fav_language
-  assert_equal("I love Ruby!", @daniel.fav_language)
+def fav_programming_language(fav_language)
+ return "I Love #{fav_language}"
 end
 end

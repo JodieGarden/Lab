@@ -4,9 +4,10 @@ class Student
     @name = student_name
     @cohort = cohort
     @words = words
-    @fav_language = favourite_language
+  end
 
-
+  def test_fav_programming_language
+    assert_equal("I love Ruby", @daniel.fav_programming_language("Ruby"))
   end
 
 end
