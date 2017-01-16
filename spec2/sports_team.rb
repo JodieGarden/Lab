@@ -5,13 +5,17 @@ require_relative("../Team")
 class TestTeam < MiniTest::Test
 
   def setup
-    @Team_One = Team.new("Scotland",["Mcdonald","James","Lee","Johnson", "Garden"], "John Johnson")
-
+    @Team_One = SportsTeam.new("best_team",["Mcdonald","James","Lee","Johnson", "Garden"], "John Johnson")
   end
 
-  def test_add_player 
-
-    assert_equal("New_Name".push)
+  def get_team_name
+    assert_equal("best_team", @team_name)
   end
 
+  def get_players_name
+    assert_equal(["Mcdonald","James","Lee","Johnson", "Garden"], @players)
+  end
+  def get_coach_name
+    assert_equal("John Johnson", @coach)
+  end
 end
